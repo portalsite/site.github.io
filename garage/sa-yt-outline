@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARS Youtube Ch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>1. スポンサーシップの柔軟性</h2>
+        <p>テレビのように期間や回数を指定したスポンサー契約を実現可能。<br>
+        特定の動画やシリーズ、一定期間にわたるチャンネル全体へのスポンサー出稿ができ、
+        ブランドの認知拡大や販促活動を計画的に行えます。</p>
+        
+        <h2>2. 登録者数 & 再生回数</h2>
+        <ul>
+            <li><strong>業界トップクラスのチャンネル登録者数：</strong>圧倒的なファンベースを確保</li>
+            <li><strong>膨大な再生回数：</strong>毎回の動画が大きな視聴数を獲得</li>
+            <li><strong>爆発的拡散力：</strong>SNSや他メディアでも話題に</li>
+        </ul>
+        <p>本チャンネルは、登録者数・再生回数ともにトップクラスの実績を誇り、
+        視聴者にダイレクトに訴求できるのが強み。<br>
+        費用対効果が圧倒的に高いメディアとして、広告主にとっても有益です。</p>
+        
+        <h2>3. 収益</h2>
+        <ul>
+            <li>広告収益（再生回数に応じた収益）</li>
+            <li>スポンサー契約による広告費</li>
+            <li>企業タイアップや商品紹介案件</li>
+        </ul>
+        
+        <h2>4. 高品質な制作</h2>
+        <p>YouTubeコンテンツはテレビ番組と遜色ない制作レベルへと進化。</p>
+        <ul>
+            <li>プロ仕様のカメラ・照明・編集技術</li>
+            <li>専門的なスタッフによる映像制作</li>
+        </ul>
+        <p>これにより、従来のテレビ放送や映画と同等以上のクオリティを実現し、
+        視聴者に圧倒的な没入感と高い満足度を提供します。</p>
+    </div>
+</body>
+</html>

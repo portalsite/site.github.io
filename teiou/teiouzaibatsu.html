@@ -1,0 +1,844 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帝央財閥</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .group {
+            margin-top: 20px;
+        }
+        .group-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 5px;
+        }
+        .accordion {
+            background-color: #e9f5ff;
+            cursor: pointer;
+            padding: 10px 15px;
+            margin: 5px 0;
+            border: 1px solid #b3d8ff;
+            border-radius: 4px;
+            text-align: left;
+            outline: none;
+            transition: background-color 0.2s ease;
+        }
+        .accordion:hover {
+            background-color: #d6e9ff;
+        }
+        .panel {
+            display: none;
+            background-color: white;
+            overflow: hidden;
+            border: 1px solid #b3d8ff;
+            border-radius: 4px;
+            margin-top: 5px;
+            padding: 15px;
+        }
+        .company-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .company-list li {
+            background-color: #e9f5ff;
+            margin: 5px 0;
+            padding: 10px 15px;
+            border: 1px solid #b3d8ff;
+            border-radius: 4px;
+        }
+        .company-details {
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const accordions = document.querySelectorAll(".accordion");
+    
+    accordions.forEach(function (accordion) {
+        accordion.addEventListener("click", function () {
+            this.classList.toggle("active");
+            const panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    });
+});
+    </script>
+</head>
+    <div class="container">
+        <h1>帝央グループ企業図</h1>
+
+        <!-- 財閥 -->
+        <div class="group">
+            <div class="group-title">帝央財閥</div>
+            <ul class="company-list">
+                <li>
+                    帝央ホールディングス
+                    <div class="company-details">
+                        帝央財閥の中核を担う持株会社として、財閥全体の経営方針の策定と統括を行う。多岐にわたるグループ企業の事業戦略を支援し、長期的な成長と安定的な経営基盤の構築を実現。非上場であり、創業者一族を中心に強固な株主構成を保持することで、迅速かつ柔軟な経営判断を可能とする。
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 商社関連 -->
+        <div class="group">
+            <div class="group-title">商社関連</div>
+            <ul class="company-list">
+                <li>
+                    帝央商事
+                    <div class="company-details">
+                        国内外での資源開発やエネルギー事業、金属・化学品の取引、機械設備の販売、食品・衣料品などの消費財の流通管理、金融・物流・インフラ関連事業など。多岐にわたる分野でグローバルな供給チェーンを構築し、新規事業開発や投資活動も積極的に展開。
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 金融関連 -->
+        <div class="group">
+            <div class="group-title">金融関連</div>
+            <ul class="company-list">
+                <li>
+                    帝央フィナンシャルグループ
+                    <div class="company-details">
+                        国際的なM&Aコンサルティングやプロジェクトファイナンスの提供。新興市場への投資やESG（環境・社会・ガバナンス）を考慮した資産運用も展開。
+                    </div>
+                </li>
+                <li>
+                    帝央銀行
+                    <div class="company-details">
+                        デジタルバンキングおよびフィンテック事業の推進。スマートフォンアプリを活用したモバイルバンキングサービスや、AIを活用した融資審査システムを提供。
+                    </div>
+                </li>
+                <li>
+                    アイフル
+                    <div class="company-details">
+                        消費者向けローンサービスやリース事業、クレジットカードやキャッシングサービスの提供。オンラインでの簡便な金融サービスを強化し、個人の資金調達ニーズに対応。
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 不動産関連 -->
+        <div class="group">
+            <div class="group-title">不動産関連</div>
+            <ul class="company-list">
+                <li>
+                    帝央不動産
+                    <div class="company-details">
+                        総合不動産デベロッパー。都市開発、オフィスビル・商業施設の管理運営、マンションや戸建住宅の開発。国内外での不動産投資やプロジェクトを手掛ける。
+                    </div>
+                </li>
+                <li>
+                    帝央住建
+                    <div class="company-details">
+                        高級マンション、戸建住宅の開発・販売。都市部の再開発プロジェクトや、エコ住宅・スマートホームを取り入れた最先端の住居を提供。
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 交通・インフラ関連 -->
+        <div class="group">
+            <div class="group-title">交通・インフラ関連</div>
+            <ul class="company-list">
+                <li>
+                    東京メトロ
+                    <div class="company-details">
+                        首都圏の地下鉄網の運営、駅ナカ商業施設の管理・運営。観光地アクセスを強化し、都市交通データを活用した新規事業にも取り組む。スマートシティプロジェクトや公共交通のデジタル化を推進。
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- メディア関連 -->
+        <div class="group">
+            <div class="group-title">メディア関連</div>
+            <button class="accordion">フジテレビ</button>
+            <div class="panel">
+                <ul class="company-list">
+                    <li>
+                        <strong>帝央・メディア・ホールディングス</strong>
+                        <div class="company-details">
+                            フジサンケイグループの中核会社であり、グループ全体の経営戦略を統括。テレビ局、新聞社、ラジオ局、出版事業を傘下に持つ総合メディア企業。ニュース、エンターテインメント、スポーツなど多岐にわたるコンテンツを提供。デジタルメディア分野に注力し、動画配信プラットフォームやメタバース事業に進出。文化事業や広告代理店事業も展開。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>フジテレビジョン</strong>
+                        <div class="company-details">
+                            テレビ放送事業を展開。地上波「フジテレビ」の運営を中心に、BSフジやフジテレビオンデマンド（FOD）などのデジタルサービスも提供。ドラマ、バラエティ、アニメ、スポーツなど多様なコンテンツ制作を行う。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>産業経済新聞社（産経新聞）</strong>
+                        <div class="company-details">
+                            全国紙「産経新聞」の発行を行う。国内外のニュースを幅広く扱い、政治、経済、社会、文化など多岐にわたる情報を提供。電子版「産経デジタル」も運営。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>サンケイスポーツ（サンスポ）</strong>
+                        <div class="company-details">
+                            スポーツ紙を発行。プロ野球、競馬など、国内外のスポーツニュースを幅広くカバー。また、エンタメ情報や社会ニュースも取り扱い、多様な読者層に対応。オンライン版「サンスポ.com」も運営。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>ニッポン放送</strong>
+                        <div class="company-details">
+                            ラジオ放送事業を展開。「オールナイトニッポン」をはじめ、エンターテインメント性の高い番組を提供し、幅広いリスナー層を獲得。インターネットラジオ配信も強化。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>ポニーキャニオン</strong>
+                        <div class="company-details">
+                            映像、音楽、出版事業を展開。映画やアニメ、音楽CDの制作・販売を行い、アーティストやクリエイターのマネジメントも担当。配信サービスの運営にも注力。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>サンケイビル</strong>
+                        <div class="company-details">
+                            不動産事業を展開。オフィスビル、商業施設、住宅の開発・運営を手掛ける。「サンケイホールブリーゼ」などの施設運営を通じて、地域文化にも貢献。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>扶桑社</strong>
+                        <div class="company-details">
+                            書籍や雑誌の出版を行う。「ESSE」「SPA!」などの雑誌や、多様なジャンルの書籍を手掛ける。電子書籍事業にも注力し、デジタルコンテンツを提供。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>八芳園</strong>
+                        <div class="company-details">
+                            結婚式場や宴会施設の運営を行う。「八芳園」として知られる庭園付きの施設で、結婚式、パーティ、イベントなど多様なサービスを提供。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>グランビスタ ホテル＆リゾート</strong>
+                        <div class="company-details">
+                            ホテルやリゾート施設の運営を手掛ける。観光業に特化し、国内外から訪れる顧客に高品質なサービスを提供。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>共同テレビジョン</strong>
+                        <div class="company-details">
+                            テレビ番組の制作プロダクション。ドラマ、バラエティ、情報番組などの制作を手掛け、多くのヒット番組を生み出している。フジテレビをはじめとする放送局向けの番組提供が主力。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>ビーエスフジ</strong>
+                        <div class="company-details">
+                            BSデジタル放送「BSフジ」の運営。ドラマ、ドキュメンタリー、映画など幅広いコンテンツを提供し、地上波では見られない特別番組も展開。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>ディノス・セシール</strong>
+                        <div class="company-details">
+                            通販事業を展開。カタログ通販「ディノス」と「セシール」を運営し、インテリア、ファッション、生活雑貨など幅広い商品を提供。ECサイトでも事業を拡大。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>サテライト</strong>
+                        <div class="company-details">
+                            アニメ制作会社。オリジナルアニメの企画・制作を行い、「マクロスシリーズ」や「アクエリオンシリーズ」などのヒット作品を手掛ける。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>産経デジタル</strong>
+                        <div class="company-details">
+                            デジタルメディア事業を展開。産経新聞電子版や「iza」などのニュースサイト運営を手掛け、ウェブ広告やデジタルマーケティングにも注力。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>フジクリエイティブコーポレーション（FCC）</strong>
+                        <div class="company-details">
+                            映像コンテンツの企画・制作。テレビドラマやバラエティ番組、映画など幅広いジャンルを手掛け、国内外での配信事業も強化。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="accordion">テレビ朝日</button>
+            <div class="panel">
+                <ul class="company-list">
+                    <li>
+                        <strong>帝央・メディア・ホールディングス</strong>
+                        <div class="company-details">
+                            朝日グループの中核会社であり、グループ全体の経営戦略を統括。テレビ局、新聞社、ラジオ局、出版事業を傘下に持つ総合メディア企業。ニュース、エンターテインメント、スポーツなど多岐にわたるコンテンツを提供。デジタルメディア分野に注力し、動画配信プラットフォームやメタバース事業に進出。文化事業や広告代理店事業も展開。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>テレビ朝日（EX）</strong>
+                        <div class="company-details">
+                            地上波テレビ放送事業を展開。「テレビ朝日」を中心に、ドラマ、バラエティ、報道、アニメなど幅広いジャンルの番組を制作・放送。動画配信サービス「テレ朝動画」や「TELASA」なども運営。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>朝日新聞社</strong>
+                        <div class="company-details">
+                            全国紙「朝日新聞」を発行。政治、経済、社会、文化など幅広い分野を扱い、電子版「朝日新聞デジタル」も運営。ジャーナリズム活動を通じて国内外のニュースを提供。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>日刊スポーツ新聞社</strong>
+                        <div class="company-details">
+                            スポーツ新聞「日刊スポーツ」の発行を行う。スポーツニュース、エンターテインメント情報、競馬など多岐にわたる情報を提供。電子版「日刊スポーツデジタル」も運営。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>朝日放送グループホールディングス（ABC）</strong>
+                        <div class="company-details">
+                            関西を基盤とするテレビ・ラジオ局「朝日放送テレビ」「朝日放送ラジオ」を運営。情報番組やバラエティ番組、スポーツ中継など地域密着型のコンテンツを提供。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>BS朝日</strong>
+                        <div class="company-details">
+                            BSデジタル放送「BS朝日」を運営。ドキュメンタリー、ドラマ、映画、音楽番組など多様なジャンルを提供し、地上波では見られない特別番組も制作。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>AbemaTV</strong>
+                        <div class="company-details">
+                            インターネットテレビ「Abema」を運営。ニュース、バラエティ、アニメ、ドラマなど24時間配信のチャンネルを提供し、新たな視聴スタイルを提案。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>東映</strong>
+                        <div class="company-details">
+                            映画、テレビ番組、アニメーションの制作・配給を行う大手映像制作会社。「スーパー戦隊シリーズ」「仮面ライダーシリーズ」など多くのヒット作品を輩出。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>朝日新聞出版</strong>
+                        <div class="company-details">
+                            出版事業を展開。「AERA」「週刊朝日」などの雑誌や、ノンフィクション、ビジネス書、文芸作品など幅広い書籍を刊行。電子書籍事業にも注力。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>テレ朝ミュージック</strong>
+                        <div class="company-details">
+                            音楽事業を展開。アーティストのマネジメントや音楽イベントの企画・運営を行い、音楽コンテンツの制作・配信を強化。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>朝日カルチャーセンター</strong>
+                        <div class="company-details">
+                            教育事業を展開。文化講座や趣味・実用講座を提供し、生涯学習の場を提供する施設を全国で運営。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>テイクシステムズ</strong>
+                        <div class="company-details">
+                            放送技術や映像制作の技術支援を担う会社。テレビ朝日や関連会社向けに最新の技術を提供し、制作現場を支える。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>朝日広告社</strong>
+                        <div class="company-details">
+                            広告代理業務を行う。テレビ、ラジオ、新聞、インターネットなど幅広いメディアを活用した広告キャンペーンを企画・実施。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>メディアシティ</strong>
+                        <div class="company-details">
+                            不動産事業を手掛ける。「六本木ヒルズ」などテレビ朝日本社周辺の施設開発・管理を行い、放送事業とのシナジーを生み出す。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>東映アニメーション</strong>
+                        <div class="company-details">
+                            アニメ制作に特化した子会社。「ドラゴンボール」「ワンピース」「プリキュアシリーズ」などの世界的ヒット作を手掛ける。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>シンエイ動画</strong>
+                        <div class="company-details">
+                            テレビアニメや劇場アニメを制作。「クレヨンしんちゃん」「ドラえもん」などの作品を担当し、幅広い世代に人気を誇る。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>テレビ朝日クリエイト</strong>
+                        <div class="company-details">
+                            映像制作プロダクション。ドラマ、バラエティ、情報番組、映画など多岐にわたるコンテンツを制作。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>六本木ヒルズアリーナ</strong>
+                        <div class="company-details">
+                            イベント施設を運営。音楽ライブ、ファッションショー、映画試写会などのイベントを通じて地域と密接な関係を築く。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>J-WAVE</strong>
+                        <div class="company-details">
+                            首都圏を拠点とするFMラジオ局。おしゃれで洗練された選曲と、ライフスタイルに密着した情報提供が特徴。「TOKYO MORNING RADIO」「STEP ONE」などの人気番組を放送し、音楽・カルチャー・ニュースを融合させたコンテンツを提供。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="accordion">TBS</button>
+            <div class="panel">
+                <ul class="company-list">
+                    <li>
+                        <strong>帝央・メディア・ホールディングス</strong>
+                        <div class="company-details">
+                            TBS・毎日グループの中核会社であり、グループ全体の経営戦略を統括。テレビ局、新聞社、ラジオ局、出版事業を傘下に持つ総合メディア企業。ニュース、エンターテインメント、スポーツなど多岐にわたるコンテンツを提供。デジタルメディア分野に注力し、動画配信プラットフォームやメタバース事業に進出。文化事業や広告代理店事業も展開。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>東京放送ホールディングス</strong>
+                        <div class="company-details">
+                            TBSグループの中核企業。テレビ・ラジオ・デジタル事業を統括し、全体の経営戦略を策定。新規事業への投資や海外展開を進めている。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>毎日新聞社</strong>
+                        <div class="company-details">
+                            全国紙「毎日新聞」の発行を行う。政治、経済、文化、社会などの幅広い分野をカバーし、電子版「毎日新聞デジタル」も展開。国内外のニュースを多角的に提供。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>スポーツニッポン新聞社（スポニチ）</strong>
+                        <div class="company-details">
+                            スポーツ新聞「スポーツニッポン（スポニチ）」を発行。プロ野球、サッカー、大相撲、競馬などのスポーツ情報をはじめ、芸能、文化、社会ニュースを幅広くカバー。オンライン版「スポニチアネックス」では、リアルタイムのニュース配信やウェブ限定の特集記事を提供。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>TBSテレビ</strong>
+                        <div class="company-details">
+                            地上波テレビ放送事業を展開。「TBSテレビ」を中心に、ドラマ、バラエティ、報道、スポーツなど多岐にわたるコンテンツを制作・放送。動画配信サービス「TBSオンデマンド」や「Paravi」なども運営。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>TBSラジオ</strong>
+                        <div class="company-details">
+                            ラジオ放送事業を展開。「爆笑問題カーボーイ」や「荻上チキ・Session」など、多様なジャンルの番組を提供。Podcastやストリーミング配信にも注力。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>MBS（毎日放送）</strong>
+                        <div class="company-details">
+                            関西地区を基盤とする放送局で、地上波「MBSテレビ」や「MBSラジオ」を運営。報道、バラエティ、スポーツ番組などを制作し、地域に密着したコンテンツを提供。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>BS-TBS</strong>
+                        <div class="company-details">
+                            BSデジタル放送「BS-TBS」の運営。ドラマ、ドキュメンタリー、スポーツなど多様なコンテンツを提供し、地上波では見られない番組も制作。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>マイナビ（株式会社マイナビ）</strong>
+                        <div class="company-details">
+                            就職・転職支援を中心とした総合情報サービスを展開し、若者向けのキャリア支援を核に、多岐にわたる事業を展開。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>TBSスパークル</strong>
+                        <div class="company-details">
+                            映像コンテンツの制作プロダクション。ドラマ、バラエティ、映画、ドキュメンタリーなどを制作し、国内外の放送局や配信プラットフォーム向けに提供。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>TBSアクト</strong>
+                        <div class="company-details">
+                            イベント企画・運営を行う事業会社。コンサート、展示会、舞台公演など多様なイベントをプロデュースし、エンターテインメント事業を拡大。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>TBSアニメーション</strong>
+                        <div class="company-details">
+                            アニメ制作に特化した部門。「進撃の巨人」や「ジョジョの奇妙な冒険」などの制作に関与し、国内外でのアニメ市場で存在感を発揮。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>毎日ビルディング</strong>
+                        <div class="company-details">
+                            不動産事業を展開。オフィスビルや商業施設の開発・運営を手掛ける。毎日新聞社本社ビル「パレスサイドビル」を代表とする不動産資産を有する。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>毎日新聞デジタル</strong>
+                        <div class="company-details">
+                            毎日新聞社が運営するデジタルメディア部門。電子版ニュースの提供に加え、ニュースアプリやSNSを活用した情報発信を行う。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>MANTANWEB</strong>
+                        <div class="company-details">
+                            毎日新聞社が運営するエンターテインメント総合ニュースサイト。アニメ、漫画、ゲーム、映画、テレビ番組、声優、イベントなど、ポップカルチャーに特化した情報を配信。
+                        </div>
+                    </li>
+                    <li>
+                        <strong>トライステージ</strong>
+                        <div class="company-details">
+                            通販事業に特化した会社で、テレビショッピングの企画・運営を行う。幅広い商品を取り扱い、ECサイトでの展開も強化。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+<div class="group">
+    <div class="group-title">エンターテインメント・家電関連</div>
+    <ul class="company-list">
+        <li>
+            SONY GROUP
+            <div class="company-details">
+                家電製品（テレビ、オーディオ、カメラなど）やゲーム機などの製造・販売をはじめ、映画制作、音楽プロダクション、ゲームソフト開発を含むエンターテインメント事業を展開。また、AIやロボティクス、センサー技術の研究開発を行い、B2B分野にも進出。持株会社としてグループ全体を統括し、エレクトロニクス、ゲーム、エンタメ、金融など多岐にわたる事業のシナジーを創出。
+            </div>
+        </li>
+        <li>
+            SONY
+            <div class="company-details">
+                家電製品（テレビ、オーディオ、カメラなど）、モバイル機器、B2B向けソリューション（センサー技術、プロフェッショナル機器など）を提供。イノベーションを追求し、グローバル市場で高いシェアを誇る。
+            </div>
+        </li>
+        <li>
+            Sony Interactive Entertainment (SIE)
+            <div class="company-details">
+                PlayStationブランドのゲーム機やゲームソフトウェアの開発・販売を中心とした事業を展開。ゲーム配信サービス「PlayStation Plus」やクラウドゲーミングサービス「PlayStation Now」も提供。ゲーム業界のリーダーとして高いシェアを誇る。
+            </div>
+        </li>
+        <li>
+            Sony Pictures Entertainment (SPE)
+            <div class="company-details">
+                映画・テレビ番組の制作、配信、ライセンス事業を行う。映画スタジオ「Columbia Pictures」やアニメ制作スタジオ「Crunchyroll」を傘下に持つ。ヒット映画「スパイダーマン」シリーズや「ゴーストバスターズ」シリーズなどを制作。
+            </div>
+        </li>
+        <li>
+            Sony Music Entertainment (SME)
+            <div class="company-details">
+                音楽制作・プロデュースを中心とした事業を展開。多様なジャンルのアーティストを抱え、音楽配信サービスやイベントの企画・運営も行う。日本国内では「ソニー・ミュージックエンタテインメント」として活動。
+            </div>
+        </li>
+        <li>
+            Sony Semiconductor Solutions (SSS)
+            <div class="company-details">
+                イメージセンサーの開発・製造を主力とする。スマートフォンカメラや産業用カメラ向けセンサーで高い市場シェアを持つ。AI技術を取り入れた高度なセンサーの研究開発も進めている。
+            </div>
+        </li>
+        <li>
+            Sony Financial Group
+            <div class="company-details">
+                保険（生命保険・損害保険）や銀行、証券業務を手がける。日本国内では「ソニーフィナンシャルホールディングス」を中心に活動し、金融サービスを通じて多くの顧客に対応している。傘下の企業には「ソニー生命保険」「ソニー損害保険」「ソニー銀行」「ソニー証券」などがある。
+            </div>
+        </li>
+        <li>
+            Aniplex
+            <div class="company-details">
+                アニメーション制作、配信、ライセンス事業を展開。大ヒットアニメ「鬼滅の刃」や「ソードアート・オンライン」などを手掛けるほか、スマートフォンゲームや音楽制作にも進出している。
+            </div>
+        </li>
+        <li>
+            Sony Network Communications
+            <div class="company-details">
+                通信事業（NURO光など）、IoTサービス、クラウドサービスの提供を中心に展開。AIやデータ解析を活用し、企業や個人向けの最先端ソリューションを提供。スマートシティやIoTプラットフォーム事業にも注力。
+            </div>
+        </li>
+        <li>
+            Zeppホールネットワーク
+            <div class="company-details">
+                国内外でライブハウス「Zepp」を運営。音楽ライブ、イベント、エンターテインメントの場を提供し、多様なジャンルのアーティストや観客に支持されている。イベントスペースの貸し出しも展開。
+            </div>
+        </li>
+        <li>
+            イープラス
+            <div class="company-details">
+                コンサート、演劇、スポーツイベントなどのチケット販売を中心とした事業を展開。オンライン予約プラットフォームを通じて、ユーザーに利便性の高いサービスを提供し、エンターテインメント体験を支援。
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="group">
+    <div class="group-title">飲料関連</div>
+    <ul class="company-list">
+        <li>
+            アサヒグループホールディングス
+            <div class="company-details">
+                飲料・食品分野を中心に事業を展開する総合企業グループ。主力のビール・発泡酒・新ジャンル製品に加え、清涼飲料水、乳製品、加工食品、健康食品なども提供。国内外で幅広いブランドを展開し、国際市場での拡大を図る。持続可能な社会の実現を目指し、環境保全や地域貢献活動も推進。
+            </div>
+        </li>
+        <li>
+            アサヒビール
+            <div class="company-details">
+                日本国内のビール・発泡酒市場でトップクラスのシェアを持つ。主力商品として「アサヒスーパードライ」を中心に、多様なビール製品を製造・販売。クラフトビールやノンアルコール飲料にも注力。
+            </div>
+        </li>
+        <li>
+            アサヒ飲料
+            <div class="company-details">
+                清涼飲料水市場で「三ツ矢サイダー」「ウィルキンソン」などのブランドを展開。健康志向の飲料や機能性食品も提供し、幅広い消費者層に対応。
+            </div>
+        </li>
+        <li>
+            アサヒグループ食品
+            <div class="company-details">
+                「ミンティア」などの菓子製品や、スープ・栄養食品を提供。栄養バランスを考慮した健康食品の開発を進め、国内市場で高い信頼を得ている。
+            </div>
+        </li>
+        <li>
+            アサヒインターナショナル
+            <div class="company-details">
+                グローバル市場での飲料・食品事業を展開。欧州では「ペローニ」「グロールシュ」などのビールブランドを所有し、プレミアム市場に注力。アジアやオセアニア地域でも事業を拡大。
+            </div>
+        </li>
+        <li>
+            ニッカウヰスキー
+            <div class="company-details">
+                日本を代表するウイスキーメーカーで、アサヒグループホールディングスの傘下。モルトウイスキーやブレンデッドウイスキーを中心に製造・販売。「余市」「宮城峡」といった蒸溜所を所有し、高品質なウイスキーを生産。国内外での高い評価を受け、「竹鶴」ブランドは世界的にも有名。クラフトウイスキーや限定商品も展開し、ウイスキー文化の普及に貢献。
+            </div>
+        </li>
+        <li>
+            カルピス
+            <div class="company-details">
+                日本初の乳酸菌飲料「カルピス」の製造・販売を行う企業。アサヒ飲料株式会社のブランドとして活動。「カルピス」シリーズに加え、「カルピスウォーター」「カルピスソーダ」など、多様な派生商品を展開。乳酸菌や発酵技術を活かした新製品の開発にも注力し、健康志向の消費者にも対応。国内外で親しまれるブランドとして広く普及している。
+            </div>
+        </li>
+        <li>
+            ヤクルト
+            <div class="company-details">
+                乳酸菌飲料の製造・販売。代表的な製品「ヤクルト」や「ジョア」など、健康志向の飲料を提供。発酵技術に基づく独自の乳酸菌を使用し、消費者の健康維持をサポート。国内外で広く販売されており、特にアジア地域を中心に事業を拡大中。また、医薬品や栄養補助食品分野への進出も進めている。
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="group">
+    <div class="group-title">流通関連</div>
+    <ul class="company-list">
+        <li>
+            イオングループ
+            <div class="company-details">
+                小売業を中心とした多国籍企業グループ。スーパーマーケット、ショッピングモール、ドラッグストアなどの運営を主軸に、金融、物流、食品製造など多岐にわたる事業を展開。アジアを中心に国際的に事業を展開している。
+            </div>
+        </li>
+        <li>
+            イオンリテール
+            <div class="company-details">
+                総合スーパー（GMS）を中心に、食品、衣料品、家庭用品などの小売事業を展開。日本国内を主な拠点とし、「イオン」「マックスバリュ」などのブランドを展開している。
+            </div>
+        </li>
+        <li>
+            イオンモール
+            <div class="company-details">
+                大規模ショッピングモールの開発・運営を行う。日本国内外で多数のモールを展開し、小売業だけでなくエンターテインメント施設や飲食施設の提供にも注力。
+            </div>
+        </li>
+        <li>
+            イオンフィナンシャルサービス
+            <div class="company-details">
+                金融サービスを提供する企業。「イオン銀行」をはじめ、クレジットカード、電子マネー「WAON」、保険事業など多様な金融サービスを展開。
+            </div>
+        </li>
+        <li>
+            マックスバリュ
+            <div class="company-details">
+                食品スーパー事業を中心に展開。「マックスバリュ」ブランドで地域密着型店舗を運営。食品や日用品を中心とした商品を提供し、地域住民の生活をサポート。
+            </div>
+        </li>
+        <li>
+            ウエルシアホールディングス
+            <div class="company-details">
+                ドラッグストア事業を展開。「ウエルシア薬局」ブランドで医薬品、健康食品、日用品を販売。調剤薬局や介護サービスも提供し、地域医療に貢献。
+            </div>
+        </li>
+        <li>
+            ミニストップ
+            <div class="company-details">
+                コンビニエンスストア事業を展開。食品や日用品の販売のほか、店内で調理したデリカ食品やスイーツなどを提供。国内外で店舗を展開し、地域密着型サービスを提供。
+            </div>
+        </li>
+        <li>
+            トップバリュコレイト
+            <div class="company-details">
+                イオングループのプライベートブランド「トップバリュ」商品の開発・供給を担当。食品、衣料品、日用品など幅広いカテゴリーの商品を提供し、高品質・低価格を追求。
+            </div>
+        </li>
+        <li>
+            キャンドゥ
+            <div class="company-details">
+                100円均一ショップの運営を行う。2022年にイオングループの傘下に入り、「キャンドゥ」ブランドで多様な商品を提供し、日常生活をサポート。
+            </div>
+        </li>
+    </ul>
+</div>
+
+        <!-- 不動産関連 -->
+        <div class="group">
+            <div class="group-title">不動産関連</div>
+            <ul class="company-list">
+                <li>
+                    帝央不動産
+                    <div class="company-details">
+                        総合不動産デベロッパー。都市開発、オフィスビル・商業施設の管理運営、マンションや戸建住宅の開発。国内外での不動産投資やプロジェクトを手掛ける。
+                    </div>
+                </li>
+                <li>
+                    帝央住建
+                    <div class="company-details">
+                        高級マンション、戸建住宅の開発・販売。都市部の再開発プロジェクトや、エコ住宅・スマートホームを取り入れた最先端の住居を提供。
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 資源・エネルギー関連 -->
+        <div class="group">
+            <div class="group-title">資源・エネルギー関連</div>
+            <ul class="company-list">
+                <li>
+                    帝央金属
+                    <div class="company-details">
+                        リサイクル金属事業。国内外での資源探査やリサイクルシステムの導入により、持続可能な資源活用を推進。
+                    </div>
+                </li>
+                <li>
+                    帝央鉱業
+                    <div class="company-details">
+                        国内外での鉱山開発および金属資源の採掘・精錬。鉄鉱石、銅、金、銀などの主要金属を中心に資源開発を行い、エネルギー業界や建設業界向けに供給。
+                    </div>
+                </li>
+                <li>
+                    帝央石油
+                    <div class="company-details">
+                        再生可能エネルギー分野への投資。太陽光発電や風力発電などの新エネルギー開発にも着手し、持続可能な社会の実現を目指す。
+                    </div>
+                </li>
+            </ul>
+        </div>
+  
+        <!-- 製造・重工関連 -->
+        <div class="group">
+            <div class="group-title">製造・重工関連</div>
+            <ul class="company-list">
+                <li>
+                    帝央重工業
+                    <div class="company-details">
+                        航空宇宙分野や防衛産業への進出。航空機エンジンや宇宙探査機器の設計・製造に取り組み、国内外の政府機関や民間企業と連携。
+                    </div>
+                </li>
+                <li>
+                    帝央化学
+                    <div class="company-details">
+                        医薬品やバイオテクノロジー分野での研究開発。医薬用化学品、ワクチン開発支援、環境に優しい生分解性プラスチックの製造を推進。
+                    </div>
+                </li>
+                <li>
+                    帝央製紙
+                    <div class="company-details">
+                        紙製品の輸出入、包装ソリューションの提供。物流や食品業界向けの高機能パッケージ材料を開発し、グローバル市場をターゲットに展開。
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 海運・物流関連 -->
+        <div class="group">
+            <div class="group-title">海運・物流関連</div>
+            <ul class="company-list">
+                <li>
+                    帝央海運
+                    <div class="company-details">
+                        国内外の貨物輸送、タンカーやコンテナ船の運航、物流ソリューションの提供。エネルギーや原材料の国際輸送に強みを持つ。
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+<div class="group">
+    <div class="group-title">自動車関連</div>
+    <ul class="company-list">
+        <li>
+            オートバックス
+            <div class="company-details">
+                カー用品の販売・整備サービス、車検、タイヤやオイル交換などの車両メンテナンス業務を提供。EV（電気自動車）や自動運転車向けの新製品開発にも注力し、モビリティ分野のリーダーとして成長。
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="group">
+    <div class="group-title">化粧品・美容関連</div>
+    <ul class="company-list">
+        <li>
+            KOSÉ
+            <div class="company-details">
+                化粧品の製造・販売。スキンケア、メイクアップ製品を中心に、高級ブランドから日用品ブランドまで幅広く展開。独自の美容成分研究に基づき、先進的な化粧品を開発。アジア市場を中心に海外展開も進め、オンラインショッピング事業を強化。
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="group">
+    <div class="group-title">衛生・ヘルスケア関連</div>
+    <ul class="company-list">
+        <li>
+            ユニ・チャーム
+            <div class="company-details">
+                衛生用品（紙おむつ、生理用品、介護用品など）の製造・販売。ヘルスケア製品として医療用マスクや手袋なども取り扱い、世界市場に輸出。リサイクル素材の活用やサステナブル製品の開発を推進。
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="group">
+    <div class="group-title">警備・セキュリティ関連</div>
+    <ul class="company-list">
+        <li>
+            テイケイ（帝央警備保障）
+            <div class="company-details">
+                企業や個人向けのセキュリティサービス、施設警備、イベント警備、交通誘導警備などを提供。近年では、AI監視システムやドローンを活用した高度なセキュリティサービスを展開。災害時の緊急対応や防犯技術のコンサルティング事業にも進出。
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="group">
+    <div class="group-title">スポーツ関連</div>
+    <ul class="company-list">
+        <li>
+            ヤクルト球団
+            <div class="company-details">
+                プロ野球球団「東京ヤクルトスワローズ」の運営を行い、試合興行、選手育成、ファン向けサービス、グッズ販売、スポンサー事業などを展開。神宮球場をホームグラウンドとする。ヤクルト本社（70%）と帝央・メディア・ホールディングス（20%）と帝央HD（10%）が主要株主であり、帝央グループの傘下に位置する。
+            </div>
+        </li>
+    </ul>
+</div>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

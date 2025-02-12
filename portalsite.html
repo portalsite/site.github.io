@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Collection</title>
+    <style>
+        :root {
+            --primary-color: #000000; /* 黒 */
+            --accent-color: #FF69B4;  /* ピンク */
+            --background-color: #000000;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .bookmark-block {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .bookmark-block.move {
+        max-height: 300px;
+        overflow-y: auto;
+        }
+
+        .bookmark-block:hover {
+            transform: translateY(-4px);
+        }
+
+        .block-title {
+            font-size: 1.4rem;
+            margin: 0 0 1.5rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        .bookmark-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .bookmark-item {
+            margin-bottom: 1rem;
+        }
+
+        .bookmark-link {
+            text-decoration: none;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            padding: 0.8rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+
+        .bookmark-link:hover {
+            background: rgba(255, 105, 180, 0.08); /* ピンクのハイライト */
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ブロック① -->
+        <div class="bookmark-block move">
+            <h2 class="block-title">Garage</h2>
+            <ul class="bookmark-list">
+                <li class="bookmark-item">
+                    <a href="https://portalsite.github.io/site.github.io/garage/seven.html" class="bookmark-link">「SEVEN」</a>
+                </li>
+                <li class="bookmark-item">
+                    <a href="https://portalsite.github.io/site.github.io/garage/this-night.html" class="bookmark-link">「This Nght」</a>
+                </li>
+                <li class="bookmark-item">
+                    <a href="https://portalsite.github.io/site.github.io/garage/sa-yt-outline.html" class="bookmark-link">SARS Youtube CH</a>
+                </li>
+                <li class="bookmark-item">
+                    <a href="https://portalsite.github.io/site.github.io/garage/seven-mix-ver.html" class="bookmark-link">「SEVEN」（Mix Ver）</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ブロック② -->
+        <div class="bookmark-block move">
+            <h2 class="block-title">帝央財閥</h2>
+            <ul class="bookmark-list">
+                <li class="bookmark-item">
+                    <a href="https://portalsite.github.io/site.github.io/teiou/teiouzaibatsu.html" class="bookmark-link">帝央財閥</a>
+                </li>
+                <li class="bookmark-item">
+                    <a href="https://portalsite.github.io/site.github.io/teiou/teiou-wiki.html" class="bookmark-link">Wikipedia</a>
+                </li>
+                <li class="bookmark-item">
+                    <a href="https://portalsite.github.io/site.github.io/teiou/hatsugenryoku.html" class="bookmark-link">発言力</a>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <!-- ブロック③ -->
+        <div class="bookmark-block move">
+            <h2 class="block-title">Notes</h2>
+            <ul class="bookmark-list">
+                <li class="bookmark-item">
+                    <a href="https://portalsite.github.io/site.github.io/notes/llc.html" class="bookmark-link">合同会社</a>
+                </li>
+                <li class="bookmark-item">
+                    <a href="https://portalsite.github.io/site.github.io/notes/equity-financing.html" class="bookmark-link">エクイティ・ファイナンス</a>
+                </li>
+                <li class="bookmark-item">
+                    <a href="https://portalsite.github.io/site.github.io/notes/sakana-ai.html" class="bookmark-link">sakana AI</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ブロック④ -->
+        <div class="bookmark-block move">
+            <h2 class="block-title">－－－</h2>
+            <ul class="bookmark-list">
+                <li class="bookmark-item">
+                    <a href="#" class="bookmark-link">GitHub Repository</a>
+                </li>
+                <li class="bookmark-item">
+                    <a href="#" class="bookmark-link">CodeSandbox</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ブロック⑤ -->
+        <div class="bookmark-block move">
+            <h2 class="block-title">－－－</h2>
+            <ul class="bookmark-list">
+                <li class="bookmark-item">
+                    <a href="#" class="bookmark-link">GitHub Repository</a>
+                </li>
+                <li class="bookmark-item">
+                    <a href="#" class="bookmark-link">CodeSandbox</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ブロック⑥ -->
+        <div class="bookmark-block move">
+            <h2 class="block-title">－－－</h2>
+            <ul class="bookmark-list">
+                <li class="bookmark-item">
+                    <a href="#" class="bookmark-link">GitHub Repository</a>
+                </li>
+                <li class="bookmark-item">
+                    <a href="#" class="bookmark-link">CodeSandbox</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

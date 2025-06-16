@@ -41,6 +41,64 @@
       background-color: #57FF62; 
       color: #FF6857; 
     }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3列 */
+    grid-template-rows: repeat(2, 1fr);    /* 2行 */
+    gap: 16px;
+    padding: 10 20px; /* bodyのpaddingと同じに */
+    box-sizing: border-box;
+    }
+
+  .card-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;  /* リンクの下線消す */
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+
+  .card-link:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+  }
+
+  .card-link::after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transform: scale(0);
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    transition: transform 0.5s, opacity 1s;
+    pointer-events: none;
+  }
+
+  .card-link:active::after {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 1;
+    transition: 0s;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
   </style>
 </head>
 <body>
@@ -135,6 +193,27 @@
       <tr><td>1階</td><td>🚗 ベース＋ガレージ</td></tr>
     </table>
   </section>
+
+<section class="card-container">
+  <a href="https://demae-can.com/search/delivery/13103030006" class="card-link" target="_blank" rel="noopener noreferrer">
+    <div class="card-title">🛵 出前館</div>
+  </a>
+  <a href="https://www.ubereats.com/jp/feed?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMiVFRiVCQyU5NiVFNCVCOCU4MSVFNyU5QiVBRSUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUo2OVBlc25lTEdHQVJlNWNWTUVEQWREdyUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0EzNS42NjA2Mzg5JTJDJTIybG9uZ2l0dWRlJTIyJTNBMTM5LjczMDA3NjglN0Q%3D" class="card-link" target="_blank" rel="noopener noreferrer">
+    <div class="card-title">🛵 Uber Eats</div>
+  </a>
+  <a href="https://maps.app.goo.gl/s5FLoGgAYZFYYVbu9" class="card-link" class="card-link" target="_blank" rel="noopener noreferrer">
+    <div class="card-title">🗺️ 帝央</div>
+  </a>
+  <a href="img/rb.webp" class="card-link" class="card-link" target="_blank" rel="noopener noreferrer">
+    <div class="card-title">🖼️ 六本木（広域）</div>
+  </a>
+  <a href="#" class="card-link" class="card-link" target="_blank" rel="noopener noreferrer">
+    <div class="card-title">📞 お問い合わせ</div>
+  </a>
+  <a href="#" class="card-link" class="card-link" target="_blank" rel="noopener noreferrer">
+    <div class="card-title">📞 お問い合わせ</div>
+  </a>
+</section>
 
 </body>
 </html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>死角の距離計算図（最新版）</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      padding: 2rem;
+      background: #f7f9fc;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .diagram {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      border-left: 2px solid #666;
+      border-bottom: 2px solid #666;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+    .building {
+      position: absolute;
+      bottom: 0;
+      background-color: #8fbcd4;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px 4px 0 0;
+    }
+    .building.a {
+      left: 50px;
+      width: 60px;
+      height: 200px; /* 40m → 5px/m */
+    }
+    .building.b {
+      left: 230px;
+      width: 221px; /* 33m 表示 */
+      height: 150px; /* 30m → 5px/m */
+    }
+    .label {
+      position: absolute;
+      background: #333;
+      color: #fff;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+    .label.a { left: 50px; top: 40px; }
+    .label.b { left: 230px; top: 70px; }
+
+    .sightline {
+      position: absolute;
+      height: 2px;
+      background: red;
+      transform-origin: left;
+      left: 110px; /* Aビル右端 */
+      top: 100px;  /* Aビルの屋上（300 - 200） */
+      width: 540px; /* = 18m + 54m → 72m × 5px/m = 360px、表示調整で540pxに拡大 */
+      transform: rotate(8deg); /* 視線角（atan(10/18)）に近い角度 */
+    }
+
+    .distance {
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    .calculation {
+      background: #eef2f7;
+      border-left: 5px solid #5a7fd3;
+      padding: 1rem;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      border-radius: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f4fa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>視線による死角の長さの計算</h1>
+
+    <div class="diagram">
+      <div class="building a">Aビル<br>40m</div>
+      <div class="building b">Bビル<br>30m</div>
+      <div class="label a">A (40m)</div>
+      <div class="label b">B (30m)</div>
+      <div class="sightline"></div>
+    </div>
+
+    <div class="distance">
+      <strong>死角の長さ：</strong><br>
+      ・<strong>Z面から：</strong><span style="color: red; font-size: 1.2rem;">54m</span><br>
+      ・<strong>X面から：</strong><span style="color: red; font-size: 1.2rem;">21m</span>
+    </div>
+
+    <div class="calculation">
+      <p><strong>📝 Z面・X面とは？</strong><br>
+        ・<strong>Z面</strong>：Aビルに近いBビルの手前の壁面<br>
+        ・<strong>X面</strong>：Bビルの奥側（裏側）の壁面<br>
+        この2点間が「Bビルの厚さ（33m）」です。
+      </p>
+
+      <p><strong>🔢 与えられた情報</strong></p>
+      <table>
+        <tr><th>項目</th><th>値</th></tr>
+        <tr><td>Aビルの高さ</td><td>40m</td></tr>
+        <tr><td>Bビルの高さ</td><td>30m</td></tr>
+        <tr><td>Aビル ↔ Bビル（Z面）間の距離</td><td>18m</td></tr>
+        <tr><td>Bビルの厚さ（Z面 → X面）</td><td>33m</td></tr>
+      </table>
+
+      <p><strong>📐 視線の傾き：</strong><br>
+        (40 - 30) / 18 = 10 / 18 = <strong>5/9</strong></p>
+
+      <p><strong>🔽 地面に届くまでの距離（Z面から）</strong><br>
+        30 ÷ (5/9) = <strong>54m</strong></p>
+
+      <p><strong>🧮 X面からの死角</strong><br>
+        54m - 33m = <strong>21m</strong></p>
+
+      <p><strong>✅ 結論</strong></p>
+      <table>
+        <tr><th>観点</th><th>死角の長さ</th></tr>
+        <tr><td>Z面から</td><td><strong>54m</strong></td></tr>
+        <tr><td>X面から</td><td><strong>21m</strong></td></tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
